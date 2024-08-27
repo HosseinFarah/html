@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tyyli.css">
+    <title>Rekisteröitymis lomake</title>
+  </head>
+  <body>
+    <section style="margin-left: 15px; margin-top: 15px">
+      <div>
+        <h1>Rekisteröidy Nettikauppaamme</h1>
+      </div>
+      <form>
+        <fieldset>
+          <legend>yhteystiedot</legend>
+          <div>
+            <label for="etunimi">Etunimi</label>
+            <br>
+            <input
+              type="text"
+              name="etunimi"
+              id="etunimi"
+              placeholder="Etunimi"
+              required
+            >
+          </div>
+          <div>
+            <label for="sukunimi">Sukunimi</label>
+            <br>
+            <input
+              type="text"
+              name="sukunimi"
+              id="sukunimi"
+              placeholder="Sukunimi"
+             required
+            >
+          </div>
+          <div>
+            <label for="katuosoite">Katuosoite</label>
+            <br>
+            <input
+              type="text"
+              name="katuosoite"
+              id="katuosoite"
+              placeholder="Katuosoite"
+              required
+            >
+          </div>
+          <div>
+            <label for="postinumero">Postinumero</label>
+            <br>
+            <input
+              type="number"
+              name="postinumero"
+              id="postinumero"
+              placeholder="postinumero"
+              required
+            >
+          </div>
+          <div>
+            <label for="postitoimipaikka">Postitoimipaikka</label>
+            <br>
+            <input
+              type="text"
+              name="postitoimipaikka"
+              id="postitoimipaikka"
+              placeholder="postitoimipaikka"
+              required
+            >
+          </div>
+          <div>
+            <label for="puhelinnumero">Puhelinnumero</label>
+            <br>
+            <input
+              type="number"
+              name="puhelinnumero"
+              id="puhelinnumero"
+              placeholder="puhelinnumero"
+              required
+            >
+          </div>
+          <div>
+            <label for="sähköposti">Sähköpostiosoite</label>
+            <br>
+            <input
+              type="email"
+              name="sähköposti"
+              id="sähköposti"
+              placeholder="esim: user@omnia.fi"
+              required
+            >
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Salasana</legend>
+
+            <label for="salasana">Salasana</label>
+            <br>
+            <input
+              type="password"
+              name="salasana"
+              id="salasana"
+              placeholder="********"
+            >
+
+        </fieldset>
+        <fieldset>
+          <legend>Mistä osastoista olet kiinnostunut?</legend>
+
+            <input type="checkbox" name="Muoti" id="Muoti">
+            <label for="Muoti">Muoti</label>
+            <input type="checkbox" name="muoti" id="muoti">
+            <label for="Urheilu">Urheilu</label>
+            <input type="checkbox" name="Urheilu" id="Urheilu">
+            <label for="Sisustaminen">Sisustaminen</label>
+            <input type="checkbox" name="Sisustaminen" id="Sisustaminen">
+            <label for="Pelit">Pelit</label>
+            <input type="checkbox" name="Pelit" id="Pelit">
+        </fieldset>
+        <fieldset>
+            <legend>Maksutapa</legend>
+            <select name="maksutapa " id="maksutapa">
+              <option value="valitse">...</option>
+              <option value="Sampo">Sampo</option>
+              <option value="Nordea">Nordea</option>
+              <option value="Osuuspankki">Osuuspankki</option>
+              <option value="Aktia ">Aktia</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Anna palautetta</legend>
+
+                <textarea
+                  name="palautetta"
+                  id="palautetta"
+                  cols="30"
+                  rows="4"
+                ></textarea>
+
+        </fieldset>
+        <fieldset>
+            <legend>Olen lukenut ja hyväksyn tuotteiden toimitusehdot.</legend>
+
+
+                <input type="radio" id="yes" name="like" value="yes">
+                <label for="yes">Kyllä</label><br>
+    
+                <input type="radio" id="no" name="like" value="no">
+                <label for="no">Ei</label><br><br>
+
+        </fieldset>
+        <br>
+        <input type="submit" value="Lähetä">
+          
+      </form>
+    </section>
+  </body>
+</html>

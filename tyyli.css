@@ -1,0 +1,29 @@
+html,
+body {
+  height: 100%;
+}
+footer {
+  position: sticky;
+  top: 100vh;
+  margin: auto;
+  text-align: center;
+  padding-top: 15px;
+  background-color: rgb(141, 141, 141);
+  height: 100px;
+  width: auto;
+}
+
+.taulukkokehys {
+  margin: auto;
+  width: 80%;
+  border-collapse: collapse;
+  height: 200px;
+  overflow: auto;
+}
+
+th,
+td {
+  border: 1px solid rgb(85, 85, 139);
+  text-align: center;
+}
+
